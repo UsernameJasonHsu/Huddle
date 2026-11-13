@@ -1,0 +1,6 @@
+{
+  "noState": "[dry-run] No state file; a real run would seed 2 item(s) without notifying.",
+  "noNew": "No new work items.",
+  "oneNew": "[dry-run] Would notify: tools/rpa/ssl-monitor#12 報表匯出逾時檢查（CSV）",
+  "twoNew": "[dry-run] Would notify: tools/portal/portal#407 Search index\n[dry-run] Would notify: tools/rpa/ssl-monitor#12 報表匯出逾時檢查（CSV）"
+}

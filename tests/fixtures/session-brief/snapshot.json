@@ -1,0 +1,14 @@
+{
+  "items": {
+    "systemMessage": "Work items (<STAMP>, gitlab.example)\n  1. acme/SupportDesk#348  [priority::high (fallback)]  idle 37d  due -\n     Check staging export | schedule\n     https://gitlab.example/acme/SupportDesk/-/work_items/348\n  2. tools/portal/portal#407  [priority::medium (fallback)]  idle 7d  due 2026-12-01\n     Search index\n     https://gitlab.example/tools/portal/portal/-/work_items/407",
+    "additionalContext": "## Work item brief (<STAMP>, host: gitlab.example)\n\nOpen work items assigned to me: 2. Already ranked by source (Jira before GitLab) -> project priority -> severity -> idle days.\n\n| # | Reference | Title | Severity (source) | Idle days | Due | URL |\n|---|---|---|---|---|---|---|\n| 1 | acme/SupportDesk#348 | Check staging export \\| schedule | priority::high (fallback) | 37 | - | https://gitlab.example/acme/SupportDesk/-/work_items/348 |\n| 2 | tools/portal/portal#407 | Search index | priority::medium (fallback) | 7 | 2026-12-01 | https://gitlab.example/tools/portal/portal/-/work_items/407 |"
+  },
+  "empty": {
+    "systemMessage": "Work items (<STAMP>, gitlab.example)\n  No open work items are assigned to me.",
+    "additionalContext": "## Work item brief (<STAMP>, host: gitlab.example)\n\nNo open work items are assigned to me."
+  },
+  "fail": {
+    "systemMessage": "Work item brief unavailable\n  Fetching work items failed: glab api issues failed (exit 1): stub failure\n  Check `glab auth status --hostname gitlab.example.com`.",
+    "additionalContext": "## Work item brief unavailable\n\nFetching work items failed: glab api issues failed (exit 1): stub failure\nCheck `glab auth status --hostname gitlab.example.com`."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "gitlabHost": "gitlab.example.com",
+  "jiraLabel": "jira",
+  "projectPriority": [
+    "acme/SupportDesk"
+  ],
+  "severityRank": {
+    "critical": 0,
+    "high": 1,
+    "medium": 2,
+    "low": 3
+  },
+  "priorityLabelFallback": true,
+  "teamsWebhookEnvVar": "SUPERVISOR_TEAMS_WEBHOOK_URL"
+}

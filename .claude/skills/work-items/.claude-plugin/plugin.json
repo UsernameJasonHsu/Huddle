@@ -1,0 +1,6 @@
+{
+  "name": "work-items",
+  "version": "0.1.0",
+  "description": "Status line and pane for my ranked GitLab work items (Supervisor-Agent)",
+  "types": "./types/index.d.ts"
+}

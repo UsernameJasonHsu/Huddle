@@ -1,0 +1,7 @@
+state/
+# Huddle runtime state (task board, inbox); local only
+office/
+# Engine-generated typings for the work-items mod (rewritten on every load)
+.claude/skills/work-items/.claude-plugin/types/
+config/office.json
+config/work-items.json

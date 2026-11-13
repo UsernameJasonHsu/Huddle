@@ -1,0 +1,54 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pwsh -NoProfile -File scripts/notify-decision.ps1)",
+      "PowerShell(pwsh -NoProfile -File scripts/notify-decision.ps1)"
+    ],
+    "deny": [
+      "Bash(glab issue note *)",
+      "PowerShell(glab issue note *)"
+    ],
+    "ask": [
+      "Bash(git push)",
+      "Bash(git push *)",
+      "Bash(glab mr create *)",
+      "Bash(glab mr update *)",
+      "Bash(glab mr merge *)",
+      "Bash(glab api --method POST *)",
+      "PowerShell(git push)",
+      "PowerShell(git push *)",
+      "PowerShell(glab mr create *)",
+      "PowerShell(glab mr update *)",
+      "PowerShell(glab mr merge *)",
+      "PowerShell(glab api --method POST *)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pwsh -NoProfile -File scripts/session-brief.ps1",
+            "timeout": 60
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "& pwsh -NoProfile -File \"$env:CLAUDE_PROJECT_DIR\\scripts\\gate-guard.ps1\"",
+            "timeout": 30,
+            "onFailure": "block"
+          }
+        ]
+      }
+    ]
+  }
+}

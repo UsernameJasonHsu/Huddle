@@ -1,0 +1,18 @@
+{
+  "workspaceRoot": "C:\\Users\\jason\\huddle-workspace",
+  "unknownProject": "auto-clone",
+  "maxAutoRounds": 3,
+  "maxActiveBuilds": 1,
+  "retentionDays": 30,
+  "projects": [
+    {
+      "match": "acme/SupportDesk",
+      "repoPath": "C:\\Users\\jason\\SupportDesk",
+      "baseBranch": "main",
+      "commands": {
+        "build": null,
+        "test": null
+      }
+    }
+  ]
+}

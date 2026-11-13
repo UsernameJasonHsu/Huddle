@@ -1,0 +1,62 @@
+[
+  {
+    "id": 9001,
+    "iid": 11,
+    "references": { "full": "tools/other/tool#11" },
+    "title": "Unlisted project, critical severity label",
+    "issue_type": "issue",
+    "labels": ["severity::critical"],
+    "severity": "UNKNOWN",
+    "web_url": "https://gitlab.example/tools/other/tool/-/issues/11",
+    "due_date": "2026-11-06",
+    "updated_at": "2026-10-01T00:00:00Z"
+  },
+  {
+    "id": 9002,
+    "iid": 21,
+    "references": { "full": "acme/SupportDesk#21" },
+    "title": "Listed project, no severity at all",
+    "issue_type": "issue",
+    "labels": [],
+    "severity": "UNKNOWN",
+    "web_url": "https://gitlab.example/acme/SupportDesk/-/issues/21",
+    "due_date": null,
+    "updated_at": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": 9003,
+    "iid": 22,
+    "references": { "full": "acme/SupportDesk#22" },
+    "title": "Listed project, high via severity field",
+    "issue_type": "incident",
+    "labels": ["bug"],
+    "severity": "HIGH",
+    "web_url": "https://gitlab.example/acme/SupportDesk/-/issues/22",
+    "due_date": null,
+    "updated_at": "2026-10-20T00:00:00Z"
+  },
+  {
+    "id": 9004,
+    "iid": 23,
+    "references": { "full": "acme/SupportDesk#23" },
+    "title": "Listed project, low via severity label, due very soon",
+    "issue_type": "issue",
+    "labels": ["severity::low"],
+    "severity": "UNKNOWN",
+    "web_url": "https://gitlab.example/acme/SupportDesk/-/issues/23",
+    "due_date": "2026-11-05",
+    "updated_at": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": 9005,
+    "iid": 24,
+    "references": { "full": "acme/SupportDesk#24" },
+    "title": "Listed project, high via severity field, updated earlier",
+    "issue_type": "incident",
+    "labels": [],
+    "severity": "HIGH",
+    "web_url": "https://gitlab.example/acme/SupportDesk/-/issues/24",
+    "due_date": null,
+    "updated_at": "2026-10-10T00:00:00Z"
+  }
+]
